@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/4e315737a7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>ICamc 2025</title>
+  <link rel="icon" href="./images/logo.203acbf6.svg" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .pulse {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav id="navbar" class="bg-[#365372] bg-gray-400 z-50 w-full top-0 left-0">
+    <div class="md:flex items-center justify-between bg-theme py-1 pr-6 pl-3 xl:pr-1 xl:py-0 md:px-14">
+      <div class="cursor-pointer">
+        <a href="/">
+
+
+          <img class='z-10 w-[60px] mt-2 md:relative md:right-12'
+            src="https://www.hmritm.ac.in/wp-content/uploads/2020/04/Bitmap.png" alt="HMR_logo" />
+
+
+        </a>
+      </div>
+      <div id="menu-toggle" class="text-3xl text-white absolute right-8 top-6 cursor-pointer md:hidden">
+        <span class="fa fa-bars"></span>
+      </div>
+      <ul id="nav-links"
+        class="md:flex md:items-center justify-center space-x-11 bg-[#9ca3af] md:bg-[transparent] text-white font-[600] tracking-[2px] md:pb-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in top-[-619px]">
+
+        <li class="hover:bg-slate-300 rounded-xl transition-all cursor-pointer font-sans">
+          <a class="nav-link" href="#aboutUs">About Us</a>
+
+        </li>
+
+        <li class="hover:bg-slate-300 rounded-xl transition-all font-sans">
+          <a href="#committee" class="nav-link">Committees</a>
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all font-sans">
+          <a href="/tracks.html" class="nav-link">Tracks</a>
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all cursor-pointer font-sans">
+
+          <a class="hover:text-blue-600 ease-in-out duration-200" href="/submission.html">Submissions</a>
+          <br />
+
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all font-sans">
+          <a href="#schedule" class="nav-link">Dates</a>
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all font-sans">
+          <a href="/registration.html" class="nav-link">Registrations</a>
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all font-sans">
+          <a href="#callforpapers" class="nav-link">Call for papers</a>
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all cursor-pointer font-sans">
+          <a href="#prvimage" class="nav-link">Previous Conferences</a>
+
+        </li>
+        <li class="hover:bg-slate-300 rounded-xl transition-all font-sans">
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class='z-[-1] pt-[90px] text-center font-serif'>
+  
+    <div class='mx-[5%] md:mx-[15%] py-6 rounded-xl shadow border-2 border-white' style='background-color:#8c0042;'>
+      <div class='text-center text-white text-xl md:text-2xl lg:text-3xl font-[700] mx-auto'>
+        <img class="w-[150px] mx-auto " src="./images/logo.203acbf6.svg" alt="">
+        <div class="flex justify-between mx-auto w-[95%]">
+        
+          <div class="text-white-800 md:pl-24">
+            <h1 class='z-10  md:tracking-widest tracking-[1px]'>3<sup>rd</sup> International Conference on</h1>
+            <h1 class="md:tracking-[2px] tracking-[1px]">Artificial Intelligence, Machine Learning and Cybersecurity
+            </h1>
+          </div>
+          <!-- <img class='z-10  w-[130px] px-2 mt-3 hidden md:block' src="images/hmr_logo-removebg-preview.png" alt="" /> -->
+        </div>
+    <br>
+        <h1
+          class=' tracking-[1px] uppercase  md:tracking-[2.5px] text-[#D3B6 83] text-white-800 mt-2 mx-3 md:mx-0 md:mt-0 mt-5 font-semibold gradient-text event-subtitle text-2xl sm:text-1xl md:text-2xl lg:text-3xl'>
+          HMR Institute of Technology and Management</h1>
+
+        <div class='text-center text-2xl font-[700] mt-4'>
+          <h1
+            class='text-[#fffff ] text-white-800 text-3xl z-10 tracking-widest mt-3 font-bold bg-gradient-to-r from-slate-50 to-zinc-300 bg-clip-text  text-border event-date text-2xl sm:text-1xl md:text-2xl lg:text-3xl'>
+            May 1-2, 2025</h1>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="w-full flex justify-center items-center">
+      <div class="deal flex flex-col items-center">AI is Future
+      </div>
+    </div>
+    <div class="w-full flex justify-center items-center">
+
+    </div>
+  </div>
+  <div id="overview" class='w-full   text-white font-sans'>
+    <div class='bg-[#ffdfd6]'>
+      <div class='mt-4'>
+        <div class="w-full py-6">
+          <marquee class="text-xl">
+            <div class="flex w-[250%]">
+              <div><img src="./images/new.gif" alt="123" class="mt-2"></div><a href="#submissionsText"
+                class="ml-2 text-[#FF0000 ] text-pink-900 text-lg mr-2"> Few good quality accepted and presented papers
+                will be selected, and after further reviewing will be published in the following SCI/Scopus indexed
+                journals :</a>
+            </div>
+            <div class="flex w-[500%]">
+              <div><img src="./images/new.gif" alt="123" class="mt-2"></div><a href="#submissionsText"
+                class="ml-2 text-[#FF0000 ] text-pink-600 text-lg "> MAPAN Journal of Metrology Society Of India(SCI)</a>
+            </div>
+            <div class="flex w-[500%]">
+              <div><img src="./images/new.gif" alt="123" class="mt-2"></div><a href="#"
+                class="ml-2 text-[#FF0000 ] text-pink-600 text-lg "> Proceedings on Engineering Sciences(Scopus)</a>
+            </div>
+            <div class="flex w-[250%]">
+              <div><img src="./images/new.gif" alt="123" class="mt-2"></div><a href="#"
+                class="ml-2 text-[#FF0000 ] text-pink-600 text-lg "> Intelligent Decision Technologies(Scopus)</a>
+            </div>
+          </marquee>
+        </div>
+        <div class=" px-[8%] md:px-[15%]">
+          <h1 class='text-[#c00000] pt-6 text-center text-pink-600 text-3xl font-[600]'>CONFERENCE OVERVIEW</h1>
+          <div class='w-72 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+        </div>
+        <p class='text-md md:text-xl px-[15%] text-pink-800 mt-8 pb-28 text-justify'>
+          HMRITM is going to organize an “International Conference on Emerging Applications of Artificial Intelligence,
+          Machine Learning and Cybersecurity” (ICAMC-2025) in the month of May 2024.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="h-8 w-full font-sans">
+
+  </div>
+
+  <div class='w-full font-sans'>
+    <div class='bg-[#ffdfd6] px-[15%]'>
+      <div>
+        <h1 class='text-[#c00000] pt-16 text-center text-3xl font-[600]'>KEYNOTE SPEAKERS</h1>
+        <div class='w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+      </div>
+      <div class="mt-20 pb-[50px]">
+        <div class=" flex flex-wrap justify-around gap-[2%] ">
+          <div class="w-[230px] mx-auto my-3 text-center font-[700]">
+            <img class="w-full rounded-full border border-[4px] border-gray-500" src="images/1.jpg" alt="">
+            <p class="bg-[#c00000] z-[100] rounded-lg py-2 text-white px-3 my-2">Prof. one</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="w-[230px] mx-auto my-3 text-center font-[700]">
+            <img class="w-full rounded-full object-stretch border border-[4px] border-gray-500" src="images/2.jpg"
+              alt="">
+            <p class="bg-[#c00000] z-[100] rounded-lg py-2 text-white px-3 my-2">prof.two</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="w-[230px] mx-auto my-3 text-center font-[700]">
+            <img class="w-full rounded-full border border-[4px] border-gray-500" src="images/3.jpg" alt="">
+            <p class="bg-[#c00000] z-[100] rounded-lg py-2 text-white px-3 my-2">Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="w-[230px] mx-auto my-3 text-center font-[700]">
+            <img class="w-full rounded-full object-stretch border border-[4px] border-gray-500" src="images/4.jpg"
+              alt="">
+            <p class="bg-[#c00000] z-[100] rounded-lg py-2 text-white px-3 my-2">Prof. Aarti Singh</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-8 w-full font-sans">
+
+  </div>
+  <div class=" bg-[#ffdfd6] ">
+    <div class="w-full font-sans  pb-10" id="committee">
+
+      <div class=' bg-[#ffdfd6] md:px-[10%]  pt-12'>
+        <div class='pt-16'>
+          <h1 class='text-[#c00000] text-center text-3xl font-[600]'>COMMITTEES</h1>
+          <div class='w-[100px] h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-8 mx-auto">
+          <button
+            class="mx-auto tab text-lg rounded-lg text-white w-[80%] py-1 bg-[#b44860] shadow-lg hover:border border-black"
+            onclick="changeTab(1)">Advisory Panel</button>
+          <button
+            class="mx-auto tab text-lg rounded-lg text-black w-[80%] py-1 bg-white shadow-lg hover:border border-black"
+            onclick="changeTab(2)">Advisory Committee</button>
+          <button
+            class="mx-auto tab text-lg rounded-lg text-black w-[80%] py-1 bg-white shadow-lg hover:border border-black"
+            onclick="changeTab(3)">Organising Committee</button>
+        </div>
+
+        <div id="content1" class="content mt-8">
+          <div class="mx-auto md:ml-0 w-[90%] md:w-[300px] font-sans">
+
+            <ul class="space-y-2">
+
+
+
+              <li class="relative">
+                <button type="button"
+                  class="hover:text-white focus:text-white w-full  bg-gray-200 text-left pl-3 py-2 rounded-md font-medium hover:bg-[#8c0042] focus:outline-none focus:bg-[#8c0042]"
+                  onclick="toggleDropdown('patrons_dropdown')">
+                  Patrons
+                </button>
+                <ul id="patrons_dropdown"
+                  class="md:absolute left-full top-0 mt-2 mx-auto md:ml-2 w-[100%] md:w-[800px] bg-white rounded-md shadow-lg hidden text-left dropdown-menu open">
+                  <li class="px-3 py-2">
+                  <li class="px-3 py-2"><strong>Hon'ble Sh. Anil Kumar Gupta</strong>, <strong>(Chief Patron)</strong>
+                    HMRITM</li>
+                  <li class="px-3 py-2"><strong>Sh. N. K. Sharma, IAS (R)</strong>, <strong>(HMRITM)</strong></li>
+                  <li class="px-3 py-2"><strong>Prof. (Dr.) V.C. Pandey</strong>, <strong>(Director)</strong> HMRITM
+                  </li>
+              </li>
+            </ul>
+            </li>
+
+
+            <li class="relative">
+              <button type="button"
+                class="hover:text-white focus:text-white w-full  bg-gray-200 text-left pl-3 py-2 rounded-md font-medium hover:bg-[#8c0042] focus:outline-none focus:bg-[#8c0042]"
+                onclick="toggleDropdown('organising_chair_dropdown')">
+                Organising Chair
+              </button>
+              <ul id="organising_chair_dropdown"
+                class="md:absolute left-full top-0 mt-2 mx-auto md:ml-2 w-[100%] md:w-[800px] bg-white rounded-md shadow-lg hidden text-left dropdown-menu open">
+                <li class="px-3 py-2">
+                  <strong>General Chair(s)</strong>
+                <li class="px-3 py-2">
+                  <span class="font-semibold">Prof. (Dr.) Sukumar Mishra</span>, IIT-Delhi
+                </li>
+            </li>
+            <li class="px-3 py-2">
+              <strong>Organizing Chair</strong>
+            <li class="px-3 py-2">
+              <h1><span class="font-semibold">Prof. (Dr.) Shalini Gupta, Dy. Director</span>,HMRITM</h1>
+            </li>
+            </li>
+            <li class="px-3 py-2">
+              <strong>Organizing Secretary</strong>
+            <li class="px-3 py-2">
+              <h1><span class="font-semibold">Prof. (Dr.) Narender Kumar</span>,HMRITM</h1>
+            </li>
+            </li>
+
+            </li>
+            </ul>
+
+            <li class="relative">
+              <button type="button"
+                class="hover:text-white focus:text-white w-full bg-gray-200 text-left pl-3 py-2 rounded-md font-medium hover:bg-[#8c0042] focus:outline-none focus:bg-[#8c0042]"
+                onclick="toggleDropdown('convener_dropdown')">
+                Convener
+              </button>
+              <ul id="convener_dropdown"
+                class="md:absolute left-full top-0 mt-2 mx-auto md:ml-2 w-[100%] md:w-[800px] bg-white rounded-md shadow-lg hidden text-left dropdown-menu">
+                <li class="px-3 py-2">
+                  <strong>Dr. Md Ehsan Asgar</strong>, HMRITM
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <button type="button"
+                class="hover:text-white focus:text-white w-full bg-gray-200 text-left pl-3 py-2 rounded-md font-medium hover:bg-[#8c0042] focus:outline-none focus:bg-[#8c0042]"
+                onclick="toggleDropdown('co_conveners_dropdown')">
+                Co-Conveners
+              </button>
+              <ul id="co_conveners_dropdown"
+                class="md:absolute left-full top-0 mt-2 mx-auto md:ml-2 w-[100%] md:w-[800px] bg-white rounded-md shadow-lg hidden text-left dropdown-menu">
+                <li class="px-3 py-2">
+                  <strong>Mr. Gyanender Kumar</strong>, HMRITM
+                </li>
+
+
+              </ul>
+            </li>
+
+
+
+
+
+
+          </div>
+        </div>
+        <div id="content2" class="content mt-8" style="display: none;">
+          <div class="mt-8">
+
+            <ul class="mx-3 md:ml-32">
+              <li class="px-3 py-2"><strong>Prof. Prem Vrat</strong>, <strong>(Northcap University, Gurugram)</strong>
+                India</li>
+              <li class="px-3 py-2"><strong>Prof. Ravi Shankar</strong>, <strong>(Indian Institute of Technology,
+                  Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. Sukumar Mishra</strong>, <strong>(Indian Institute of Technology,
+                  Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Dr. Valentina Emilia Balas</strong>, <strong>(Aurel Vlaicu University of
+                  Arad/Academy of Romanian Scientists)</strong> Romania</li>
+              <li class="px-3 py-2"><strong>Dr. Nitin Kumar Upadhye</strong>, <strong>(Manipal Academy of Higher
+                  Education, Dubai)</strong> United Arab Emirates</li>
+              <li class="px-3 py-2"><strong>Dr. Kruglov Dmitrii Valerievich</strong>, <strong>(St. Petersburg State
+                  Institute of Technology)</strong> Russia</li>
+              <li class="px-3 py-2"><strong>Prof. S K. Garg</strong>, <strong>(Delhi Technological University,
+                  Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Dr. Aditi Sharan</strong>, <strong>(Jawaharlal Nehru University,
+                  Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. Ajay S. Singholi</strong>, <strong>(University School of Automation
+                  and Robotics, GGSIPU, Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. A K Mohapatra</strong>, <strong>(Indira Gandhi Delhi Technical
+                  University for Women, Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. Ashish Agarwal</strong>, <strong>(Indira Gandhi National Open
+                  University, Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. Sandeep Malik</strong>, <strong>(BBIT Kolkata, West Bengal)</strong>
+                India</li>
+              <li class="px-3 py-2"><strong>Prof. Tanupriya Choudhury</strong>, <strong>(Graphic Era Deemed to be
+                  University, Dehradun)</strong> India</li>
+              <li class="px-3 py-2"><strong>Dr. Jawed Ahmed</strong>, <strong>(Jamia Hamdard, Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Dr. D. S. Singh</strong>, <strong>(Madan Mohan Malaviya University of
+                  Technology, Gorakhpur)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. M. N. Hoda</strong>, <strong>(Bharati Vidyapeeth's Institute of
+                  Computer Applications and Management, Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Dr. Prashant Kumar Jain</strong>, <strong>(PDPM Indian Institute of
+                  Information Technology, Jabalpur)</strong> India</li>
+              <li class="px-3 py-2"><strong>Dr. Ramakrishna Kumar</strong>, <strong>(National University of Science and
+                  Technology, Muscat)</strong> Sultanate of Oman</li>
+              <li class="px-3 py-2"><strong>Prof. Dharmender Kumar</strong>, <strong>(J. C. Bose University, Faridabad,
+                  Haryana)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. Devendra Tayal</strong>, <strong>(Indira Gandhi Delhi Technical
+                  University for Women, Delhi)</strong> India</li>
+              <li class="px-3 py-2"><strong>Prof. Ravinder Rena</strong>, <strong>(DUT Business School, Durban
+                  University of Technology, ML Sultan Campus, Durban)</strong> Republic of South Africa</li>
+
+            </ul>
+
+
+          </div>
+        </div>
+        <div id="content3" class="content mt-8" style="display: none;">
+          <div class="mt-8">
+            <ul class="mx-3 md:ml-32">
+              <li class="px-3 py-2"><strong>Dr. Sanjeev Uppal</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Pawan</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Padmaja Panda</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Chinmayee Tripathi</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Taruna Sharma</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Uma Gautam</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Archna Sahay</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Shivangi</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Suresh Kumar</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Komal Bhardwaj</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Shikha</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Vikas</strong>, <strong>(HMRITM)</strong></li>
+              <li class="px-3 py-2"><strong>Dr. Anup Paul</strong>, <strong>(HMRITM)</strong></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class='w-full text-pink-500 font-sans text-justify'>
+
+    <div  class="h-8 w-full font-sans">
+
+    </div>
+
+    <div id="callforpapers" class='w-full text-gray-700 font-sans'>
+      <div class='bg-[#ffdfd6] px-[8%] md:px-[15%]'>
+        <div>
+          <h1 class='text-[#c00000] pt-16 text-center text-3xl font-[600]'>CALL FOR PAPERS</h1>
+          <div class='w-32 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+        </div>
+        <p class="text-justify text-md md:text-lg pt-8 "> <strong>ICAMC-2025 is inviting original, previously unpublished, and
+          high-quality research papers addressing research challenges and advances in the topics mentioned.</strong> </p>
+        <p class="text-justify text-md md:text-lg pt-3 pb-16"> <strong>Prospective authors are invited to contribute high-quality
+          papers by the submission deadline through the online submission system. The submission of a paper implies that
+          the paper is original and has not been submitted under review or is not copyright-protected elsewhere and will
+          be presented by an author if accepted. All submitted papers will be refereed by experts in the field based on
+          the criteria of originality, significance, quality and clarity. The authors of accepted papers will have an
+          opportunity to revise their papers and take consideration of the referees’ comments and suggestions.
+          Different tracks will be included. Application domains include(but not limited to):
+          Smart Mobility- An intelligent way to a Smart World Intelligent Robots & Control System
+          Artificial Intelligence and Machine Learning Cybersecurity
+          Autonomic and Trusted Computing Big Data
+          Biomedical Informatics and Computation Cloud Computing
+          Computer Architecture Computer Games and Animation Computer Graphics and Design Computer vision
+          Data Compression
+          Distributed and parallel systems Embedded Computing
+          Crowdsourcing and Information Retrieval (Big Data) and many more </strong></p>
+
+      </div>
+    </div>
+    <div  class="h-8 w-full font-sans">
+
+    </div>
+
+    <div id="schedule" class='w-full text-[#8c0042]  font-sans'>
+      <div class='bg-[#ffdfd6] px-[5%] pb-10 md:px-[15%]'>
+        <div>
+          <h1 class='text-[#c00000] pt-16 text-center text-3xl font-[600]'>IMPORTANT DATES</h1>
+          <div class='w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+          <div class="h-8  w-full"></div>
+        </div>
+        <div class="flex text-md md:text-lg md:text-xl text-white bg-[#8c0042] font-[500] py-3">
+          <div class="w-1/2 text-center">EVENT</div>
+          <div class='w-1 h-auto border-r-2 border-white'></div>
+          <div class="w-1/2 text-center">DATE</div>
+        </div>
+        <div class="flex   text-md md:text-lg md:text-xl py-3 ">
+
+          <div class="w-1/2 text-center ">Date of conference</div>
+          <div class='w-1 h-auto border-r-2 border-white'></div>
+          <div class="w-1/2 text-center">May 1-2, 2025</div>
+        </div>
+        <div class="flex   text-md md:text-lg md:text-xl py-3 bg-[#fbb6a3]">
+
+          <div class="w-1/2 text-center">submission Deadline</div>
+          <div class='w-1 h-auto border-r-2 border-white'></div>
+          <div class="w-1/2 text-center">March 15, 2025</div>
+        </div>
+        <div class="flex   text-md md:text-lg md:text-xl py-3 ">
+          <div class="w-1/2 text-center">Acceptance notification</div>
+          <div class='w-1 h-auto border-r-2 border-white'></div>
+          <div class="w-1/2 text-center">April 10, 2025</div>
+        </div>
+        <div class="flex   text-md md:text-lg md:text-xl py-3 bg-[#fbb6a3] ">
+          <div class="w-1/2 text-center">Camera Ready Paper</div>
+          <div class='w-1 h-auto border-r-2 border-white'></div>
+          <div class="w-1/2 text-center">April 20, 2025</div>
+        </div>
+        <div class="flex   text-md md:text-lg md:text-xl py-3 ">
+          <div class="w-1/2 text-center">Early Bird Registration</div>
+          <div class='w-1 h-auto border-r-2 border-white'></div>
+          <div class="w-1/2 text-center">April 20,2025</div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutUs" class="h-8 w-full font-sans">
+
+    </div>
+
+    <div class='w-full font-sans h-auto'>
+      <div class='bg-[#ffdfd6] pb-10 px-[8%] md:px-[15%]'>
+        <div>
+          <h1 class='text-[#c00000] pt-12 text-center text-3xl font-[600]'>ABOUT US</h1>
+          <div class='w-[100px] h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+        </div>
+       
+        <p class="text-lg text-justify mt-4 text-gray-700"> <strong>HMR Institute of Technology & Management was established in the
+          year 2002. It is spread over a sprawling lush green campus 5 acres of land.
+
+          HMRITM exists for nurturing the Technical Spirit – conceived in 2002, to provide exceptional facilities for
+          students of Engineering and Technology, the HMR Institute of Technology and Management boasts of being among
+          the
+          reputed institutes even in its early stages. The Institute recognises the need for bringing up a new age
+          cerebral workforce in today’s highly competitive environment.
+
+          The name HMR stands for the founders of this institution Late Sh. Hiralal, Late Smt. Mohan Devi and Late Smt.
+          Rita Gupta The Institute provides an atmosphere that ensures academic excellence and industry exposure that
+          helps equip the students with the technical skills and emotional intelligence to successfully grapple with the
+          complexities of a dynamic technology-driven environment. This endeavour is greatly aided by the local on of
+          the
+          institute in Delhi that is home to several corporate houses and industries.
+
+          The institute stands for quality embedded higher education at par with global standard and an excellent
+          learning
+          environment backed by innovative state-of-the-art infrastructure. Further, it aims to add greater value to the
+          world of crucial engineering developments and technological breakthroughs through an active focus on research
+          and development activities. With a bird’s eye-view of all-encompassing development, it strives to achieve
+          faster
+          progress for students, and for itself..</strong></p>
+
+      </div>
+      <div class="h-8 w-full font-sans">
+
+      </div>
+      <div class='bg-[#ffdfd6] pb-10 px-[8%] md:px-[15%]'>
+        <div>
+          <h1 class='text-[#c00000] pt-12 text-center text-3xl font-[600]'>ABOUT CONFERENCE</h1>
+          <div class='w-[100px] h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+        </div>
+       
+        <p class="text-lg text-justify mt-4 text-gray-700"> <strong>HMRITM is going to organize an “International Conference on Emerging  Applications  of  Artificial  Intelligence,  Machine Learning and Cybersecurity” (ICAMC-2025) in the month of May 2025.
+<br>
+
+          HMRITM exists for nurturing the Technical Spirit – conceived in 2002, to provide exceptional facilities for
+          students of Engineering and Technology, the HMR Institute of Technology and Management boasts of being among
+          the
+          reputed institutes even in its early stages. The Institute recognises the need for bringing up a new age
+          cerebral workforce in today’s highly competitive environment.
+<br>
+          ICAMC  2025  is  the  premier  single-track  conference  for reporting advances in all AI, ML and CS aspects, including theory,  tools,  applications,  systems,  test-beds  and  field deployments. The conferences focuses on the core science to develop fundamental principles that underpin the integration of intelligence, as well as on the development of technologies, tools, architectures and infrastructure for building a systems, highlighting the design, implementation, and investigation of system. Application domains include (but are not limited to): transportation,  energy,  water,  agriculture,  medical  and assistive technology, sensor and social networks, robotics, smart cities, ecology, and supply-chains. Among the relevant research areas are security, control, optimization, machine learning, game theory, mechanism design, mobile and cloud computing, model-based design, verification, data mining / analytics, signal processing, and human-in-the-loop shared or supervisory control.
+<br>
+          The scope of ICAMC 2025 is to provide an international forum to promote, enhance and stimulate international research interactions  and  collaboration  in  the  fields  of  Computer Science,  Electronics,  Electrical,  Healthcare,  Information Technology & Management. It will facilitate to promote the exchange of ideas among interested researchers, students, industrialist, developers and practitioners. This conference will  also  feature  plenary  talks,  workshops,  and  parallel technical  sessions.  Selected  papers  will  be  published  in prestigious book series with ISBN number or Scopus indexed journalsfi or UGC journals.</strong></p>
+
+      </div>
+      <div class="h-8 w-full font-sans">
+
+      </div>
+      <div class="pb-10 bg-[#ffdfd6]">
+      <div id="prvimage" class="bg-[#ffdfd6] h-auto">
+        <div class="p-10 ">
+          <h1 class='text-[#c00000] text-center text-3xl font-[600]'>PREVIOUS CONFERENCE</h1>
+          <div class='w-[100px] h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl'></div>
+        </div></div>
+       
+        <div class="slideshow-container pb-10 h-500px">
+
+          <img src="/images/prv-1.jpg" alt="Image 2">
+          <img src="/images/prv-2.jpg" alt="Image 3">
+          <img src="/images/prv-3.jpg" alt="Image 4">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="h-8 w-full font-sans">
+
+    </div>
+    <div class="w-full font-sans" id="contact">
+      <div class=" bg-[#ffdfd6] pt-16">
+        <div class="pt-16">
+          <h1 class="text-[#c00000] text-center text-3xl font-[600]">
+            CONTACT US
+          </h1>
+          <div class="w-[100px] h-[2px] mx-auto mt-2 bg-[#365372] rounded-xl"></div>
+        </div>
+        <div class="md:flex  justify-center">
+          <div
+            class="bg-[#b44860] md:w-[25%] m-[5%] pb-[2%] rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer shadow-lg">
+            <i class="fa-solid fa-location-dot ml-[48%] text-[30px] mt-6 mb-4 text-[#c00000]" aria-hidden="true"></i>
+            <div class="text-center text-white text-[21px] font-[500] ">
+              CONFERENCE VENUE:
+            </div>
+            <div class="text-center">
+              <h1 class="text-white text-[24px] font-[500]">
+                HMR
+              </h1>
+              <h1 class="text-white text-[24px] font-[500]">
+                Institute of Technology and Management
+              </h1>
+              <h1 class="text-white  font-[500]"> Plot No. 326, Hamidpur,</h1>
+              <h1 class="text-white  font-[500]">
+                Delhi 110036,, India
+              </h1>
+            </div>
+          </div>
+          <div
+            class="bg-[#b44860] md:w-[25%] m-[5%] pb-[2%] rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer shadow-lg">
+            <i class="fa-solid fa-phone ml-[48%] text-[30px] mt-6 mb-4 text-[#c00000]" aria-hidden="true"></i>
+            <div class="text-center text-white text-[21px] font-[500] ">
+              PHONE NUMBER
+            </div>
+            <div class="text-center">
+              <h1 class="text-white text-[22px] font-[500] mt-4">
+                (011) 27724113,
+              </h1>
+              <h1 class="text-white text-[22px] font-[500]">
+                +91.8287461931
+              </h1>
+            </div>
+          </div>
+          <div
+            class="bg-[#b44860] md:w-[25%] m-[5%] pb-[2%] rounded-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer shadow-lg">
+            <i class="fa-solid fa-envelope ml-[48%] text-[30px] mt-6 mb-4 text-[#c00000]" aria-hidden="true"></i>
+            <div class="text-center text-white text-[21px] font-[500] ">
+              EMAIL ADDRESS
+            </div>
+            <div class="text-center">
+              <h1 class="text-white text-[22px] font-[500] mt-6">
+                info@hmritm.ac.in
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5% w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.505619213644!2d77.15033821550202!3d28.82380308214822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daaf4c884f85b%3A0x1c00e11a9ce7433c!2sHMR%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1588921739579!5m2!1sen!2sin"
+            width="100%" height="550" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen=""
+            aria-hidden="false" tabindex="0">
+
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <div class='w-full md:h-96 footer bg-pink-900 font-sans'>
+    <img class='mx-auto pt-6 md:pt-12 w-[80px] md:w-[120px]'
+      src="https://www.hmritm.ac.in/wp-content/uploads/2020/04/Bitmap.png" alt="HMRITM" />
+    <a href="https://www.hmritm.ac.in/"
+      class='cursor-pointer text-white font-[600] text-center pt-4 text-lg md:text-2xl' target="_blank">
+      <h1>hmritm.ac.in</h1>
+    </a>
+    <div class='w-[60%] mx-auto h-[0px] border-dashed border-blue-900 border-[1px]  mt-2 md:mt-4'></div>
+    <h1 class='text-white   mt-2 md:mt-4 text-center font-[600] mx-[5%]'><span class='text-[#ecb227]'>Copyright ©
+        2025</span> HMR Institute of Technology and Management <span class='text-[#ecb227]'>All Rights Reserved.</span>
+      <div class='flex justify-center text-xl md:text-3xl   py-3 md:mt-4 '>
+
+        <a href="https://www.facebook.com/hmritm/" target="_blank" class="cursor-pointer ml-3" aria-label="facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/_hmritm_/" target="_blank" class="cursor-pointer ml-3"
+          aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/hmritm" target="_blank" class="cursor-pointer ml-3"
+          aria-label="Instagram">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/HmritmHamidpur?t=-5oHalsw5nIETCrKQAaRzQ&s=09" target="_blank" class="cursor-pointer ml-3"
+          aria-label="Instagram">
+          <i class="fa-brands fa-square-twitter"></i>
+        </a>
+
+
+
+      </div>
+  </div>
+</body>
+<script src="
+https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/min/tiny-slider.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.min.css
+" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mada:wght@200;300;400;500;600;700;900&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+<script src="script.js"></script>
+
+</html>
