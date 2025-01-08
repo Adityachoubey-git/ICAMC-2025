@@ -35,11 +35,28 @@ function changeTab(tabNumber) {
   
   
   const menuToggle = document.getElementById('menu-toggle');
+  const navBar = document.getElementById('navbar');
       const navLinks = document.getElementById('nav-links');
+      const navMid = document.getElementById('navmid');
       menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('top-20');
-        navLinks.classList.toggle('bg-theme');
         navLinks.classList.toggle('top-[-619px]');
+     
+        // Ensure background color is applied on toggle
+        if (navLinks.classList.contains('top-20')) {
+          navLinks.style.backgroundColor = '#ffdfd6'; // Apply background color
+          navBar.style.backgroundColor = '#ffdfd6';
+          navLinks.style.zIndex = '10'; // Bring the menu to the front
+           // Change padding-bottom for navMid
+    navMid.style.paddingBottom = '15px';
+
+        } else {
+          navLinks.style.backgroundColor = 'transparent'; // Reset to none when hidden
+          navBar.style.backgroundColor = 'transparent';
+          navLinks.style.zIndex = '-1'; // Send the menu to the back
+             // Reset padding-bottom for navMid
+    navMid.style.paddingBottom = '0px';
+        }
       });
   var countDownDate = new Date("May 1, 2025 10:00:00").getTime();
    
