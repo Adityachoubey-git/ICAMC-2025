@@ -29,9 +29,9 @@ function changeTab(tabNumber) {
     dropdown.classList.toggle('hidden');
   }
   
-  // Open the "Organising Chair" section by default
-  const organisingChairDropdown = document.getElementById('patrons_dropdown');
-  organisingChairDropdown.classList.remove('hidden');
+  // // Open the "Organising Chair" section by default
+  // const organisingChairDropdown = document.getElementById('patrons_dropdown');
+  // organisingChairDropdown.classList.remove('hidden');
   
   
   const menuToggle = document.getElementById('menu-toggle');
