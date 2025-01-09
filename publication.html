@@ -24,21 +24,32 @@
 <body class="bg-pink-50 text-gray-900">
   <!-- Header -->
   <header class="bg-pink-900 py-4">
-    <div class="container mx-auto px-1 flex justify-between items-center">
-      <!--<a href="/index.html" class="text-2xl font-bold text-white"></a>-->
+    <div class="container mx-auto px-6 flex justify-between items-center">
       <div class="logo">
-        <img class="w-20 h-15"
-          src="https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg"
-          alt="Logo">
+        <img class="w-20 h-15" src="https://raw.githubusercontent.com/Adityachoubey-git/ICAMC-HMRITM-2025/5865f8f8cfa8a153757448bc2d5fab5c911afb4d/images/logo.203acbf6.svg" alt="Logo">
       </div>
-      <nav>
-        <a href="./index.html" class="text-pink-200 hover:text-white mx-3">Home</a>
-        <a href="./index.html#Aboutus" class="text-pink-200 hover:text-white mx-3">About</a>
-        <a href="./tracks.html" class="text-pink-200 hover:text-white mx-3">Tracks</a>
+      <nav id="nav-links" class="hidden md:flex space-x-4">
+        <a href="/index.html" class="text-pink-200 hover:text-white mx-3">Home</a>
+        <a href="/index.html#Aboutus" class="text-pink-200 hover:text-white mx-3">About</a>
+        <a href="/tracks.html" class="text-pink-200 hover:text-white mx-3">Tracks</a>
         <a href="./index.html" class="text-pink-200 hover:text-white mx-1">Contact</a>
       </nav>
+      <button id="hamburger" class="md:hidden text-pink-200 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="hidden bg-pink-800 text-pink-200 md:hidden">
+    <a href="/index.html" class="block px-4 py-2 hover:bg-pink-700">Home</a>
+    <a href="/index.html#Aboutus" class="block px-4 py-2 hover:bg-pink-700">About</a>
+    <a href="/tracks.html" class="block px-4 py-2 hover:bg-pink-700">Tracks</a>
+    <a href="./index.html" class="block px-4 py-2 hover:bg-pink-700">Contact</a>
+  </div>
+
 
 
   <!-- Main Container -->
@@ -94,6 +105,14 @@
       </footer>
     </div>
     </div>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>
