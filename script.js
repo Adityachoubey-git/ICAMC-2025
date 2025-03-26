@@ -6,7 +6,7 @@ function changeTab(tabNumber) {
   for (let i = 0; i < buttons.length; i++) {
     if (i === tabNumber - 1) {
       buttons[i].classList.add('active');
-      buttons[i].style.backgroundColor = '#b44860';
+      buttons[i].style.backgroundColor = '#b44860'; 
       buttons[i].style.color = 'white';
       contents[i].style.display = 'block';
     } else {
